@@ -9,7 +9,7 @@ public class Example {
 
     @RequestMapping("/")
     String home() {
-        return "<html>Welcome to FreddieMac Spinnaker POC <br> by Pricing Devops Team <br This is a simple Spring Boot Application <br> This is a Successful Response...:)</html>";
+        return "<html><center>Welcome to FreddieMac Spinnaker POC <br> by Pricing Devops Team <br This is a simple Spring Boot Application <br> This is a Successful Response...:)</center></html>";
     }
 
     public static void main(String[] args) throws Exception {
