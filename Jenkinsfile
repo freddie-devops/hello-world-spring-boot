@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
         echo "Workspace: $workspace"
-        bat label: '', script: 'mvn clean install pom.xml'
+        sh label: '', script: 'mvn clean install pom.xml'
         app = docker.build("freddiedevops/hello-world-spring-boot")
     }
 
